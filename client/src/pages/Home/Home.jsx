@@ -32,7 +32,6 @@ export default function Home(){
             {/* Gallery */}
             {/* BlogComponent */}
             {/* Subscription */}
-            {/* Footer */}
         </>
     )
 }

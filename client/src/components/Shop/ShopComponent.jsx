@@ -7,7 +7,6 @@ import "./ShopComponent.scss";
 import { useEffect, useState } from "react";
 import { fetchCards } from "../../redux/cards";
 import { PopUp } from "../PopUp/PopUp";
-import { getOrder } from "../../redux/order";
 
 export default function ShopComponent(){
     const dispatch = useDispatch();
