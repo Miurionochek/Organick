@@ -1,0 +1,35 @@
+.search{
+    background-color: #FAFAFA;
+    max-width: 376px;
+    height: 66px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 36px;
+
+    &__input{
+        width: calc(100% - 100px);
+        height: 100%;
+        border-radius: 36px;
+        background-color: inherit;
+        font-size: 24px;
+    }
+    &__input:focus{
+        outline: none;
+    }
+    &__button{
+        width: 56px;
+        height: 56px;
+        background-color: #7EB693;
+        border-radius: 50%;
+        margin-right: 6px;
+    }
+    &__button:hover{
+        background-color: #62b07e;  
+    }
+    &__img{}
+}
+
+.search:hover{
+    border: 2px solid black;
+}

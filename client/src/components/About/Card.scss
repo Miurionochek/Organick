@@ -1,0 +1,22 @@
+@import "../../mixins/text-mixins.scss";
+
+.card{
+    display: flex;
+    &__rectangle{
+        height: 101px;
+        width: 101px;
+        border-radius: 15px;
+
+    }
+    &__description{
+        width: 444px;
+    }
+    &__header{
+        @include header(25px, 800, #274C5B);
+        margin-bottom: 7px;
+
+    }
+    &__text{
+        @include text();
+    }
+}

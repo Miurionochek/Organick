@@ -1,0 +1,24 @@
+@import "../../mixins/text-mixins.scss"; 
+
+.hero{
+    height: 900px;
+    display: flex;
+    align-items: center;
+    &__description{
+        max-width: 531px;
+        
+    }
+    &__pre-header{
+        @include pre-header(#68A47F);
+    }
+    &__header{
+        margin: 8px 0 20px;
+        @include header(70px, 800, #274C5B);
+    }
+    &__image{
+        position: absolute;
+        left: 770px;
+        z-index: -1;
+    }
+    &__img{}
+}

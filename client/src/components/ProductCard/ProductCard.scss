@@ -1,0 +1,53 @@
+@import "../../mixins/text-mixins.scss";
+.product-card{
+    height: 483px;
+    width: 335px;
+    background-color: #F9F8F8;
+    border-radius: 30px;
+    padding: 30px 27px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex: 1 0 21%;
+    margin: 10px;
+    &__tag{
+        padding: 5px 12px;
+        background-color: #274C5B;
+        color: #FFFFFF;
+        border-radius: 8px;
+    }
+    &__description-section{
+        
+    }
+    &__title{
+        @include header(20px, 800, #274C5B);
+    }
+    &__price-section{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__prices{
+        display: flex;
+        align-items: center;
+    }
+    &__old-price{
+        @include card_header(15px, 600, #B8B8B8);
+        margin-right: 10px;
+    }
+    &__new-price{
+        @include card_header(18px, 700, #274C5B);
+    }
+    &__rating{
+        display: flex;
+    }
+    &__star{
+    }
+}
+
+hr{
+    border-top: 1px solid #DEDDDD;
+    width: 100%;
+    margin: 15px 0 5px;
+}

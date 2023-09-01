@@ -1,0 +1,16 @@
+@import "../../mixins/text-mixins.scss";
+.navigate{
+    margin: 0 150px;
+    &__items{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        max-width: 550px;
+        width: 550px;
+    }
+    &__item{
+        text-decoration: none;
+        @include header(20px, 700, #274C5B);
+        // font-weight: 700;
+    }
+}

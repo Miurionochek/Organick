@@ -1,0 +1,28 @@
+@import "../../mixins/text-mixins.scss";
+
+.orange{
+    background-color: #EFD372;
+}
+
+.blue{
+    background-color: #274C5B;
+    .button-link{
+        &__text{
+            @include header(20px, 700, #FFFFFF);
+        }
+    }
+}
+
+.blue:hover{
+    background-color: #EFD372;
+}
+
+.black{
+    background-color: #1E1E1E;
+    margin: 0 auto;
+    .button-link{
+        &__text{
+            @include header(20px, 700, #FFFFFF);
+        }
+    }
+}

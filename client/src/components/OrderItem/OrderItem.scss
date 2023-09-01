@@ -1,0 +1,59 @@
+@import "../../mixins/text-mixins.scss";
+
+.order-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    &__description{
+        display: flex;
+        align-items: center;
+    }
+
+    &__image{
+        width: 292px;
+        height: 226px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: rgb(253, 176, 45, 0.16);
+        background-blend-mode: multiply;
+        border-radius: 26px;
+    }
+
+    &__title, &__current-price{
+        @include header(40px, 600, #274C5B);
+        margin-left: 10px;
+    }
+    &__title{
+        margin-left: 20px;
+    }
+    &__old-price{
+        @include header(24px, 700, #B8B8B8);
+        margin-left: 15px;
+    }
+    &__quantity-section{
+        display: flex;
+        align-items: center;
+    }
+    &__input{
+        height: 80px;
+        width: 134px;
+        border-radius: 16px;
+        border: 2px solid #274C5B;
+        @include header(20px, 700, #274C5B);
+        margin: 0 20px;
+
+        text-align: center;
+
+    }
+    &__quantity-title{
+        @include header(32px, 600, #274C5B);
+    }
+    &__close{
+        width: 64px;
+        height: 46px;
+        background-color: #274C5B;
+        color: #FFFFFF;
+        border-radius: 16px;
+    }
+}

@@ -1,0 +1,28 @@
+@import "../../mixins/text-mixins.scss";
+
+.dropdown-list{
+    &__header{
+        cursor: pointer; 
+        display: flex;
+        align-items: center;
+    }
+    &__title{
+        @include header(20px, 700, #274C5B);
+        margin-right: 5px;
+    }
+    &__arrow{
+        width: 15px;
+        height: 15px;
+    }
+
+    &__items{
+        list-style: none;
+        position: absolute;
+        z-index: 3;
+    }
+    &__item{
+        text-decoration: none;
+        @include header(20px, 700, #274C5B);
+
+    }
+}

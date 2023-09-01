@@ -1,0 +1,18 @@
+@import "../../mixins/text-mixins.scss";
+
+.not-found{
+    width: 100%;
+    height: 898px;
+    background: url(../../img/NotFound.png);
+    &__description{
+        padding: 210px 250px 0 1100px;
+    }
+    &__problem-num{}
+    &__header{
+        @include header(70px, 800, #274C5B);
+    }
+    &__text{
+        @include text();
+        margin: 15px 0 30px;
+    }
+}

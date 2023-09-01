@@ -1,0 +1,21 @@
+@import "../../mixins/text-mixins.scss";
+
+.shop-component{
+    padding-top: 150px;
+    &__titles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__pre-header{
+        @include pre-header(#7EB693);
+    }
+    &__header{
+        @include header(50px, 800, #274C5B);
+    }
+    &__goods{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+}

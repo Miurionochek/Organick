@@ -1,0 +1,22 @@
+@import "../../mixins/text-mixins.scss";
+
+.button-link{
+    padding: 28px 39px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+
+    &__text{
+        margin-right: 10px;
+        @include header(20px, 700, #274C5B);
+        
+    }
+    &__circle{
+        background-color: #335B6B;
+        height: 19px;
+        width: 19px;
+        border-radius: 50%;
+        
+    }
+    &__img{}
+}

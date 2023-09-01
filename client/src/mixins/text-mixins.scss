@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,800&display=swap');
+
+@mixin header ($fz, $fw, $color){
+    font-family: "Roboto Flex";
+    font-size: $fz;
+    font-weight: $fw;
+    color: $color;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+@mixin pre-header($color){
+    font-family: Yellowtail;
+    font-size: 36px;
+    font-weight: 400;
+    color: $color;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@mixin text(){
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    color: #525C60;
+    line-height: 165.4%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+@mixin card_header ($fz, $fw, $color){
+    font-family: "Open Sans";
+    font-size: $fz;
+    font-weight: $fw;
+    color: $color;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+@mixin placeholder{
+    font-family: Roboto;
+    font-size: 18;
+    font-weight: 400;
+    font-style: italic;
+    color: #ABABAB;
+}

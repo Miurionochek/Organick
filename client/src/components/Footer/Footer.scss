@@ -1,0 +1,64 @@
+@import "../../mixins/text-mixins.scss";
+.footer{
+padding: 100px 63px 60px;
+
+    &__container{
+        display: flex;
+        justify-content:space-evenly;
+        width: 100%;
+    }
+    &__copyright{
+        text-align: center;
+        @include text();
+    }
+    &__container{
+        margin-bottom: 80px;
+    }
+    &__contacts{
+       display: flex;
+       flex-direction: column;
+       align-items: end;
+    }
+    &__contacts-h{
+        margin-bottom: 30px;
+        @include header(30px, 700, #274C5B);
+    }
+    &__contact{
+        text-align: end;
+        margin-bottom: 10px;
+    }
+    &__main{
+        width: 543px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__mt{
+        text-align: center;
+        padding: 20px 0px 50px;
+    }
+    &__text, &__page{
+        margin-bottom: 6px;
+        @include text();
+    }
+    &__pages-h{
+        margin-bottom: 30px;
+        @include header(30px, 700, #274C5B);
+    }
+
+    &__follows{
+        display: flex;
+        width: 285px;
+        justify-content: space-between;
+    }
+    &__follow-item{
+        width: 60px;
+        height: 60px;
+        background-color: #EFF6F1;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

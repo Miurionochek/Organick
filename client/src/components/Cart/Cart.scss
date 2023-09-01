@@ -1,0 +1,24 @@
+@import "../../mixins/text-mixins.scss";
+.cart{
+    display: flex;
+    align-items: center;
+    border: #E0E0E0 solid 2px;
+    border-radius: 33px;
+    width: 159px;
+    height: 66px;
+    &__button{
+        background-color: #274C5B;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 15px 0 5px;
+    }
+    &__button:hover{
+        background-color: #377289;
+    }
+    &__img{}
+    &__title{
+        @include header(18px, 600, #274C5B);
+    }
+}

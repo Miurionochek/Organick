@@ -1,0 +1,37 @@
+@import "../../mixins/text-mixins.scss";
+
+.offer-card{
+    &__card{
+        width: 682px;
+        height: 367px;
+        border-radius: 28px;
+
+        padding: 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    &__card_1{
+        background: url(../../img/OfferCard1.jpg);
+    }
+    &__card_2{
+        background: url(../../img/OfferCard2.jpg);
+    }
+    &__pre-header_1{
+        @include pre-header(#FFFFFF);
+    }
+    &__pre-header_2{
+        @include pre-header(#7EB693);
+    }
+    &__header{
+        max-width: 277px;
+    }
+    &__header_1{
+        @include header(40px, 800, #FFFFFF)
+    }
+    &__header_2{
+        @include header(40px, 800, #274C5B)
+    }
+}
