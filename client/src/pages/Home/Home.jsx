@@ -3,6 +3,7 @@ import AboutComponent from "../../components/About/AboutComponent";
 import Hero from "../../components/Hero/Hero";
 import OfferBanner from "../../components/OfferBanner/OfferBanner";
 import ShopComponent from "../../components/Shop/ShopComponent";
+import Subscription from "../../components/Subscription/Subscription";
 import Testimonials from "../../components/Testimonials/Testimonials";
 
 import "./Home.scss";
@@ -32,7 +33,9 @@ export default function Home(){
             {/* AboutUsComponent */}
             {/* Gallery */}
             {/* BlogComponent */}
-            {/* Subscription */}
+            <div className="thin">
+                <Subscription/>
+            </div>
         </>
     )
 }
