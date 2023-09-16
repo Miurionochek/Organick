@@ -1,0 +1,24 @@
+@import "../../mixins/text-mixins.scss";
+
+.testimonials-counter{
+    border: 4px solid #7EB693;
+    border-radius: 50%;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 189px;
+        width: 189px;
+        background-color: #F1F1F1;
+        border-radius: 50%;
+        margin: 7px;
+    }
+    &__number{
+        @include header(50px, 800, #274C5B);
+    }
+    &__value{
+        @include card_header(18px, 600, #274C5B);
+    }
+}

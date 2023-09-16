@@ -1,0 +1,28 @@
+@import "../../mixins/text-mixins.scss";
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    &__author-avatar{}
+    &__author-img{
+        border-radius: 50%;
+    }
+    &__rate{
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+    &__text{
+        @include text();
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    &__author-name{
+        @include header(25px, 600, #274C5B);
+    }
+    &__author-position{
+        @include card_header(18px, 400, #274C5B);
+    }
+}

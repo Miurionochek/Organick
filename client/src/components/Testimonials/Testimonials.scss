@@ -1,0 +1,44 @@
+@import "../../mixins/text-mixins.scss";
+.testimonials{
+
+    background:  url(../../img/TestimonialsBack.png);
+    height: 1267px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        width: 1108px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 102px;
+    }
+    &__headers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    &__pre-header{
+        @include pre-header(#7EB693);
+        margin-bottom: 8px;
+    }
+    &__header{
+        @include header(50px, 800, #274C5B);
+    }
+
+    &__hr{
+        padding-bottom: 102px;
+    }
+    &__counters{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}

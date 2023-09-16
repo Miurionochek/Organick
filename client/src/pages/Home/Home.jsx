@@ -3,6 +3,7 @@ import AboutComponent from "../../components/About/AboutComponent";
 import Hero from "../../components/Hero/Hero";
 import OfferBanner from "../../components/OfferBanner/OfferBanner";
 import ShopComponent from "../../components/Shop/ShopComponent";
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 import "./Home.scss";
 
@@ -26,7 +27,7 @@ export default function Home(){
             <div className="thin">
                 <ShopComponent/>
             </div>
-            {/* Testimonial */}
+            <Testimonials/>
             {/* Offer */}
             {/* AboutUsComponent */}
             {/* Gallery */}
