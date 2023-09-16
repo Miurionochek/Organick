@@ -7,7 +7,10 @@ import cors from "cors";
 
 const app = express();
 
-mongoose.connect("mongodb+srv://ivanfedoniukkn2021:1w2q3r4e3@cluster0.uuqtosr.mongodb.net/organick?retryWrites=true&w=majority")
+const user = "ivanfedoniukkn2021";
+const password = "1w2q3r4e3"
+
+mongoose.connect(`mongodb+srv://${user}:${password}@cluster0.uuqtosr.mongodb.net/organick?retryWrites=true&w=majority`)
 .then(() => {console.log("DB Ok")})
 .catch((err) => {console.log("DB error: " + err)})
 
