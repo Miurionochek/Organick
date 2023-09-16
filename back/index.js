@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 
 
-import {CardController,OrderController} from "./controllers/index.js";
+import {CardController,OrderController, TestimonialsController} from "./controllers/index.js";
 import cors from "cors";
 
 const app = express();
@@ -18,7 +18,8 @@ app.use("/img",express.static("img"));
 app.use(express.json());
 app.use(cors());
 
-app.get("/", CardController.getAll)
+app.get("/cards", CardController.getAll)
+app.get("/testimonials", TestimonialsController.getAll)
 
 app.post("/cart", OrderController.createOrder)
 

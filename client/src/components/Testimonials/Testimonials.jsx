@@ -3,9 +3,17 @@ import "./Testimonials.scss";
 import Testimonial from "../Testimonial/Testimonial";
 import TestimonialNavigation from "../TestimonialNavigation/TestimonialNavigation";
 import TestimonialsCounter from "../TestimonialsCounter/TestimonialsCounter";
-
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { fetchTestimonials } from "../../redux/testimonials";
 
 export default function Testimonials(){
+    const dispatch = useDispatch();
+    useEffect(()=>{
+        dispatch(fetchTestimonials());
+    },[])
+
+
 
     return(
         <div className="testimonials">

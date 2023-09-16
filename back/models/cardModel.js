@@ -5,7 +5,10 @@ const CardSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    imgUrl: String,
+    imgUrl: {
+        type: String,
+        required: true
+    },
     title:{
         type: String,
         required: true,
